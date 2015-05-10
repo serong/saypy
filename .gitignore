@@ -1,0 +1,10 @@
+# Git'e dahil olmayacak klasörler.
+.idea/
+
+# Dosyalar.
+*.pyc
+*.bak
+*.org~
+*.py~
+*.yaml~
+*.html

@@ -1,0 +1,4 @@
+#+TITLE: SayPy
+#+AUTHOR: github.com/serong
+
+*SayPy* basit sayısal istatistikleri veren ve topların çıkış miktarlarına göre tahminde bulunabilen bir uygulamadır.
