@@ -145,6 +145,3 @@ class SayisalDBT(object):
         connection.close()
 
         return True
-
-
-wnine = SayisalDBT(961, "2015-04-11", (2, 3, 8, 15, 16, 48))
