@@ -161,6 +161,27 @@ class SayisalDb(object):
         except:
             raise ValueError("Hafta veritabaninda bulunamadi.")
 
+    def get_picked(self, number):
+        """ Verilen sayinin cikis miktarini getir.
+
+            :arguments:
+                :param number: sayi
+                :type number: int
+
+            :returns:
+                :rtype: number
+        """
+
+        connection = sqlite3.connect(self.db_name)
+
+        q = "SELECT picked FROM numbers_picked WHERE number = ?"
+        d = (number, )
+
+        query = connection.execute(q, d)
+        result = query.fetchone()
+
+        return result[0]
+
 
 # x = SayisalDb()
 # print x.get_weeks_offset(900, 5)
